@@ -1,188 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me | AI Construction Portfolio</title>
   <meta name="description" content="About page for Niharika Chenna's AI in Construction and Facilities Management portfolio.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body data-page="about">
-  <header class="topbar">
-    <div class="topbar-inner">
+<body>
+
+  <header class="site-header">
+    <div class="navbar">
       <a class="brand" href="index.html">
-        <span class="brand-mark">AI Portfolio</span>
-        <span class="brand-sub">Construction + Facilities Management</span>
+        <span class="brand-title">AI Portfolio</span>
+        <span class="brand-subtitle">Construction + Facilities Management</span>
       </a>
+
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="index.html" data-nav="home">Home</a>
-        <a href="about.html" data-nav="about">About Me</a>
-        <a href="course-overview.html" data-nav="course">Course Overview</a>
-        <a href="projects.html" data-nav="projects">Projects</a>
-        <a href="weekly-articles.html" data-nav="articles">Weekly Articles</a>
-        <a href="learning-journey.html" data-nav="journey">Learning Journey</a>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Me</a>
+        <a href="course-overview.html">Course Overview</a>
+        <a href="projects.html">Projects</a>
+        <a href="weekly-articles.html">Weekly Articles</a>
+        <a href="learning-journey.html">Learning Journey</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main class="page-shell">
+
     <section class="page-intro">
-      <div class="container hero-grid">
-        <div class="reveal visible">
-          <span class="eyebrow">Section 01</span>
-          <h1 class="page-title">
-            <span>About</span>
-            <span>Me</span>
-          </h1>
-          <p class="hero-copy">
+      <div class="page-intro-grid">
+        <div class="reveal active">
+          <span class="kicker">Section 01</span>
+          <h1 class="page-title">About Me</h1>
+          <p class="page-description">
             I am a construction management graduate student with an architectural background and a growing interest in how AI can support project delivery, decision-making, facility operations, and communication across the built environment.
           </p>
         </div>
 
-        <aside class="hero-aside reveal">
-          <span class="mini-label">Edit This Area</span>
-          <p style="margin-top: 0.9rem;">
-            Add your photo here by replacing the placeholder block below with an image tag such as:
+        <div class="intro-panel reveal active">
+          <span class="kicker">Profile</span>
+          <p class="muted">
+            You can replace this area with your photo later. For now, this panel gives a clean introduction that matches your CSS.
           </p>
-          <div class="media-placeholder" style="min-height: 260px; margin-top: 1rem;"></div>
-        </aside>
+        </div>
       </div>
     </section>
 
-    <section class="section-block">
-      <div class="container split-copy reveal">
-        <div class="panel">
-          <span class="mini-label">My Story</span>
-          <h2 class="section-heading" style="margin-top: 0.85rem;">From architecture to AI-aware construction thinking.</h2>
-          <p style="margin-top: 1rem;">
+    <section class="section">
+      <div class="about-grid">
+        <div class="about-photo reveal active">
+          <!-- Replace with your own image later -->
+          <img src="https://via.placeholder.com/600x700?text=Your+Photo" alt="Profile placeholder">
+        </div>
+
+        <div class="about-content reveal active">
+          <span class="kicker">My Story</span>
+          <h2 class="section-title">From Architecture to AI-Aware Construction Thinking</h2>
+
+          <p>
             My academic and professional journey began in architecture, where I developed an eye for design, spatial thinking, and the importance of clarity in visual communication. Over time, I became more interested in what happens after the design phase—how teams coordinate, how information flows across a project, and how decisions affect execution in the real world.
           </p>
+
           <p>
             That curiosity led me toward construction management and, more recently, toward the role of artificial intelligence in AEC and facilities work. This course gave me a chance to explore AI not only as a technology trend, but as a practical tool that can influence workflows, productivity, and problem-solving.
           </p>
+
+          <div class="info-chips">
+            <span class="chip">Architecture Background</span>
+            <span class="chip">Construction Management</span>
+            <span class="chip">AI in AEC</span>
+            <span class="chip">Project Coordination</span>
+            <span class="chip">Digital Workflows</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="kicker">Core Interests</span>
+      <h2 class="section-title">What I Bring</h2>
+      <p class="section-subtitle">
+        A cross-disciplinary perspective that connects design, construction thinking, and emerging digital tools.
+      </p>
+
+      <div class="info-grid">
+        <div class="info-card reveal active">
+          <h3>Architecture Foundation</h3>
+          <p>
+            Training in design, presentation, visual thinking, and interpretation of drawings and built spaces.
+          </p>
         </div>
 
-        <div class="panel">
-          <span class="mini-label">Core Interests</span>
-          <ul class="clean-list">
-            <li>AI applications in construction documentation and coordination</li>
-            <li>Automation support for facilities management workflows</li>
-            <li>Data-informed decision-making in project and operations settings</li>
-            <li>User-friendly communication of technical ideas</li>
-            <li>Visual storytelling through portfolio design and digital presentation</li>
+        <div class="info-card reveal active">
+          <h3>Construction Management Lens</h3>
+          <p>
+            An increasing focus on planning, coordination, execution, communication, and practical implementation.
+          </p>
+        </div>
+
+        <div class="info-card reveal active">
+          <h3>AI Curiosity</h3>
+          <p>
+            A strong interest in how AI tools can support efficiency, insight generation, and better workflows in AEC and facilities management.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="kicker">Skills + Tools</span>
+      <h2 class="section-title">Suggested Content You Can Customize</h2>
+
+      <div class="info-grid">
+        <div class="info-card reveal active">
+          <h3>Technical and Academic Strengths</h3>
+          <ul>
+            <li>Research and article analysis</li>
+            <li>Presentation design and visual communication</li>
+            <li>Construction and facilities workflow awareness</li>
+            <li>Structured reflection and synthesis of ideas</li>
+            <li>Project documentation and organization</li>
           </ul>
         </div>
-      </div>
-    </section>
 
-    <section class="section-block">
-      <div class="container">
-        <div class="section-top reveal">
-          <div>
-            <span class="eyebrow">What I Bring</span>
-            <h2 class="section-heading">A cross-disciplinary perspective</h2>
-          </div>
-          <p class="section-description">
-            This page can position you as someone who understands design, project coordination, and emerging digital tools—not just one isolated skill area.
-          </p>
+        <div class="info-card reveal active">
+          <h3>Tools Explored This Semester</h3>
+          <ul>
+            <li>ChatGPT</li>
+            <li>Canva</li>
+            <li>InVideo</li>
+            <li>Presentation Tools</li>
+            <li>Research Databases</li>
+            <li>GitHub Pages</li>
+          </ul>
         </div>
 
-        <div class="info-grid">
-          <div class="info-card reveal">
-            <h3>Architecture Foundation</h3>
-            <p style="margin-top: 0.8rem;">Training in design, presentation, visual thinking, and interpretation of drawings and built spaces.</p>
-            <div class="card-meta">
-              <span class="tag">Design Thinking</span>
-              <span class="tag">Visualization</span>
-            </div>
-          </div>
-
-          <div class="info-card reveal">
-            <h3>Construction Management Lens</h3>
-            <p style="margin-top: 0.8rem;">An increasing focus on planning, coordination, execution, communication, and practical implementation.</p>
-            <div class="card-meta">
-              <span class="tag">Coordination</span>
-              <span class="tag">Delivery</span>
-            </div>
-          </div>
-
-          <div class="info-card reveal">
-            <h3>AI Curiosity</h3>
-            <p style="margin-top: 0.8rem;">A strong interest in how AI tools can support efficiency, insight generation, and better workflows in AEC and FM.</p>
-            <div class="card-meta">
-              <span class="tag">Innovation</span>
-              <span class="tag">Emerging Tech</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-block">
-      <div class="container reveal">
-        <div class="section-top">
-          <div>
-            <span class="eyebrow">Skills + Tools</span>
-            <h2 class="section-heading">Suggested content you can customize</h2>
-          </div>
-        </div>
-
-        <div class="grid-2">
-          <div class="panel">
-            <h3>Technical and academic strengths</h3>
-            <ul class="clean-list">
-              <li>Research and article analysis</li>
-              <li>Presentation design and visual communication</li>
-              <li>Construction and facilities workflow awareness</li>
-              <li>Structured reflection and synthesis of ideas</li>
-              <li>Project documentation and organization</li>
-            </ul>
-          </div>
-
-          <div class="panel">
-            <h3>Tools explored this semester</h3>
-            <div class="card-meta" style="margin-top: 1rem;">
-              <span class="tag">ChatGPT</span>
-              <span class="tag">Canva</span>
-              <span class="tag">InVideo</span>
-              <span class="tag">Presentation Tools</span>
-              <span class="tag">Research Databases</span>
-              <span class="tag">GitHub Pages</span>
-            </div>
-            <p style="margin-top: 1rem;">
-              Replace these tags with the exact tools and platforms you used during the course.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-block">
-      <div class="container reveal">
-        <div class="reflection-card">
-          <span class="mini-label">Professional Direction</span>
-          <h2 class="section-heading" style="margin-top: 0.85rem;">Why this portfolio matters to me</h2>
-          <p style="margin-top: 1rem;">
-            This portfolio reflects more than just course completion. It represents how I am developing a broader perspective on the future of the built environment—one that combines construction thinking, management awareness, and digital innovation. I want to understand not only how projects are delivered, but also how smarter tools can make those processes more efficient, informed, and human-centered.
+        <div class="info-card reveal active">
+          <h3>Professional Direction</h3>
+          <p>
+            This portfolio reflects how I am developing a broader perspective on the future of the built environment—one that combines construction thinking, management awareness, and digital innovation.
           </p>
         </div>
       </div>
     </section>
+
+    <section class="section">
+      <div class="reflection-card reveal active">
+        <span class="kicker">Why This Portfolio Matters</span>
+        <h3>Building a stronger connection between learning and practice</h3>
+        <p>
+          I want to understand not only how projects are delivered, but also how smarter tools can make those processes more efficient, informed, and human-centered. This portfolio is a record of that learning journey.
+        </p>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="footer">
-    <div class="container footer-box reveal">
-      <div>
-        <div class="brand-mark">Up Next</div>
-        <p class="footer-text">Continue to the course overview page to explain the purpose and structure of the class.</p>
-      </div>
-      <a class="button" href="course-overview.html">View Course Overview</a>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>AI in Construction and Facilities Management Portfolio</p>
+      <p>Niharika Chenna</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
