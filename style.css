@@ -635,3 +635,38 @@ ul {
     padding: 20px;
   }
 }
+/* ---------- COURSE OVERVIEW STACK ---------- */
+
+.course-stack {
+  display: grid;
+  gap: 24px;
+  padding-top: 20px;
+}
+
+.course-card {
+  max-width: 900px;
+}
+
+.course-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  margin-bottom: 14px;
+  text-transform: none;
+  letter-spacing: -0.03em;
+}
+
+.course-card p + p {
+  margin-top: 14px;
+}
+
+.course-list {
+  list-style: disc;
+  padding-left: 22px;
+  margin-top: 8px;
+}
+
+.course-list li {
+  margin-bottom: 12px;
+  color: var(--text-body);
+}
