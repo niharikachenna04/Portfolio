@@ -670,3 +670,130 @@ ul {
   margin-bottom: 12px;
   color: var(--text-body);
 }
+/* ---------- EDITORIAL HOME PAGE ---------- */
+
+.minimal-header .brand-title {
+  font-size: 1rem;
+}
+
+.minimal-header .brand-subtitle {
+  font-size: 0.7rem;
+}
+
+.home-layout {
+  width: min(100% - 40px, 1280px);
+  margin: 0 auto;
+}
+
+.editorial-hero {
+  padding: 34px 0 60px;
+}
+
+.editorial-name {
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 15vw, 14rem);
+  line-height: 0.78;
+  letter-spacing: -0.1em;
+  text-transform: uppercase;
+  color: var(--text-dark);
+  margin-bottom: 46px;
+}
+
+.editorial-profile {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 34px;
+  align-items: start;
+  max-width: 940px;
+  margin-left: 140px;
+}
+
+.editorial-photo {
+  width: 220px;
+  height: 260px;
+  overflow: hidden;
+  background: var(--bg-soft);
+  border-radius: 4px;
+}
+
+.editorial-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.editorial-text {
+  max-width: 720px;
+}
+
+.editorial-text h2 {
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+.editorial-text p {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--text-body);
+  margin-bottom: 12px;
+}
+
+.editorial-work {
+  padding: 30px 0 90px;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 42px 38px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.work-card {
+  display: block;
+}
+
+.work-thumb {
+  height: 250px;
+  background: linear-gradient(135deg, rgba(161,145,156,0.22), rgba(255,255,255,0.5));
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+.work-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  line-height: 1;
+  color: var(--text-dark);
+  letter-spacing: -0.04em;
+  margin-bottom: 4px;
+}
+
+.work-card h3 span {
+  font-size: 1rem;
+}
+
+.work-card p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .editorial-profile {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .editorial-name {
+    font-size: clamp(4rem, 18vw, 8rem);
+  }
+}
