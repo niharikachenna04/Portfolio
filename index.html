@@ -7,130 +7,233 @@
   <meta name="description" content="Portfolio for AI in Construction and Facilities Management coursework by Niharika Chenna." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header class="topbar">
-    <div class="topbar-inner header-center">
-      <a href="index.html" class="brand single-brand">
+    <div class="topbar-inner">
+      <a href="index.html" class="brand">
         <span class="brand-mark">AI IN AEC INDUSTRY</span>
       </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="course-overview.html">Course Overview</a>
+        <a href="projects.html">Projects</a>
+        <a href="weekly-articles.html">Weekly Articles</a>
+        <a href="learning-journey.html">Learning Journey</a>
+      </nav>
     </div>
   </header>
 
-  <main class="profile-layout">
-    <section class="profile-card">
-      <div class="profile-cover"></div>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1 class="hero-title">
+            NIHARIKA<br />
+            CHENNA
+          </h1>
 
-      <div class="profile-main">
-        <div class="profile-photo-frame">
-          <img src="profile-photo.jpg" alt="Niharika Chenna" onerror="this.style.display='none'" />
+          <div class="hero-profile-row">
+            <div class="profile-photo-frame">
+              <img src="profile-photo.jpg" alt="Niharika Chenna" onerror="this.style.display='none'" />
+            </div>
+
+            <p class="hero-copy">
+              Welcome to my course portfolio for <strong>AI in Construction and Facilities Management</strong>.
+              This website presents my course projects, weekly article reflections, and learning journey
+              focused on how artificial intelligence connects with construction and the AEC industry.
+            </p>
+          </div>
         </div>
 
-        <div class="profile-info">
-          <h1>NIHARIKA CHENNA</h1>
-          <p class="profile-headline">
-            Construction Management Graduate Student | AI in Construction 
-          </p>
-          <p class="profile-subline">
-            Portfolio focused on AI use in the AEC industry, course projects, weekly article reflections,
-            and learning outcomes from the semester.
+        <aside class="hero-aside card">
+          <span class="section-kicker">Portfolio Snapshot</span>
+          <h3>AI learning, construction management, and semester work in one place.</h3>
+          <p>
+            This portfolio connects class topics with construction management ideas, practical AI tools,
+            article summaries, and reflections from the semester.
           </p>
 
-          <div class="profile-meta">
-            <span>AI in AEC Industry</span>
-            <span>Construction Management</span>
-            <span>Semester Portfolio</span>
+          <div class="hero-stats">
+            <div class="stat-box">
+              <strong>5</strong>
+              <span>Main Pages</span>
+            </div>
+            <div class="stat-box">
+              <strong>AI</strong>
+              <span>AEC Focus</span>
+            </div>
+            <div class="stat-box">
+              <strong>CM</strong>
+              <span>Construction Management</span>
+            </div>
+            <div class="stat-box">
+              <strong>01</strong>
+              <span>Course Portfolio</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container split-copy">
+        <div class="panel">
+          <span class="section-kicker">About This Website</span>
+          <h2 class="section-title">A focused portfolio of AI learning and course work</h2>
+          <p class="section-text">
+            This website organizes my course work into a clear digital portfolio. It includes course
+            background, projects, weekly articles, and reflections that show how my understanding of AI
+            in the AEC industry developed throughout the semester.
+          </p>
+        </div>
+
+        <div class="quote-box">
+          <span class="section-kicker light-kicker">Main Theme</span>
+          <h3>
+            How can AI improve construction workflows, communication, documentation, and decision-making?
+          </h3>
+          <p>
+            This question connects the main ideas explored across the portfolio.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container">
+        <div class="section-top">
+          <div>
+            <span class="section-kicker">Portfolio Structure</span>
+            <h2 class="section-title">Main sections of the website</h2>
+          </div>
+
+          <p class="section-text no-top-margin">
+            Each section below opens one part of the portfolio.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <a href="about.html" class="card portfolio-card">
+            <div class="thumb thumb-one"></div>
+            <div class="card-inner">
+              <div class="card-title">
+                <h3>About Me</h3>
+                <span>01</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="course-overview.html" class="card portfolio-card">
+            <div class="thumb thumb-two"></div>
+            <div class="card-inner">
+              <div class="card-title">
+                <h3>Course Overview</h3>
+                <span>02</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="projects.html" class="card portfolio-card">
+            <div class="thumb thumb-three"></div>
+            <div class="card-inner">
+              <div class="card-title">
+                <h3>Projects</h3>
+                <span>03</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="weekly-articles.html" class="card portfolio-card">
+            <div class="thumb thumb-four"></div>
+            <div class="card-inner">
+              <div class="card-title">
+                <h3>Weekly Articles</h3>
+                <span>04</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="learning-journey.html" class="card portfolio-card">
+            <div class="thumb thumb-five"></div>
+            <div class="card-inner">
+              <div class="card-title">
+                <h3>Learning Journey</h3>
+                <span>05</span>
+              </div>
+            </div>
+          </a>
+
+          <div class="card portfolio-card">
+            <div class="thumb thumb-six"></div>
+            <div class="card-inner">
+              <div class="card-title">
+                <h3>Creative Portfolio Space</h3>
+                <span>+</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="content-grid home-single-column">
-      <div class="main-column">
-        <section class="card compact-section">
-          <div class="section-header">
-            <span class="section-kicker">Overview</span>
-            <h2>About This Website</h2>
+    <section class="page-section">
+      <div class="container">
+        <div class="section-top">
+          <div>
+            <span class="section-kicker">Highlights</span>
+            <h2 class="section-title">What this portfolio communicates</h2>
           </div>
-          <p>
-            This portfolio presents my course work for AI in Construction and Facilities Management.
-            It includes my understanding of AI applications in construction, weekly article summaries,
-            project work, and reflections on how AI can support communication, documentation, planning,
-            and decision-making in the built environment.
-          </p>
-        </section>
+        </div>
 
-        <section class="card compact-section">
-          <div class="section-header">
-            <span class="section-kicker">Main Theme</span>
-            <h2>AI in the Built Environment</h2>
-          </div>
-          <p>
-            The main focus of this portfolio is to understand how artificial intelligence can support
-            construction workflows, improve project coordination, reduce repetitive work, and help future
-            professionals make better decisions.
-          </p>
-        </section>
-
-        <section class="card compact-section">
-          <div class="section-header">
-            <span class="section-kicker">Portfolio Structure</span>
-            <h2>Main Sections</h2>
+        <div class="stats-strip">
+          <div class="card metrics-card">
+            <strong>Academic</strong>
+            <p>Documents course work in a clear and organized way.</p>
           </div>
 
-          <div class="section-list">
-            <a href="about.html" class="section-item">
-              <div>
-                <strong>About Me</strong>
-              </div>
-              <span>01</span>
-            </a>
-
-            <a href="course-overview.html" class="section-item">
-              <div>
-                <strong>Course Overview</strong>
-              </div>
-              <span>02</span>
-            </a>
-
-            <a href="projects.html" class="section-item">
-              <div>
-                <strong>Projects</strong>
-              </div>
-              <span>03</span>
-            </a>
-
-            <a href="weekly-articles.html" class="section-item">
-              <div>
-                <strong>Weekly Articles</strong>
-              </div>
-              <span>04</span>
-            </a>
-
-            <a href="learning-journey.html" class="section-item">
-              <div>
-                <strong>Learning Journey</strong>
-              </div>
-              <span>05</span>
-            </a>
+          <div class="card metrics-card">
+            <strong>Creative</strong>
+            <p>Presents assignments through a designed portfolio format.</p>
           </div>
-        </section>
+
+          <div class="card metrics-card">
+            <strong>Professional</strong>
+            <p>Connects AI concepts to construction workflows and AEC practice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-complete">
+      <div class="portfolio-complete-box">
+        <div>
+          <h2>WELCOME TO MY PORTFOLIO</h2>
+          <p>Begin with the main sections above to explore my AI in AEC course work.</p>
+        </div>
+
+        <a href="about.html" class="back-home-button">Start With About Me</a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-box">
-      <p>
-        Email: <a href="mailto:niharikachenna04@gmail.com">niharikachenna04@gmail.com</a><br />
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/niharikachenna" target="_blank">
-          www.linkedin.com/in/niharikachenna
-        </a>
-      </p>
+    <div class="container footer-box">
+      <div>
+        <div class="brand-mark">Contact</div>
+        <p class="footer-text">
+          Email: <a href="mailto:niharikachenna04@gmail.com">niharikachenna04@gmail.com</a><br />
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/niharikachenna" target="_blank">
+            www.linkedin.com/in/niharikachenna
+          </a>
+        </p>
+      </div>
     </div>
   </footer>
 </body>
