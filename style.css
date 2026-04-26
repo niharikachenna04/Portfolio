@@ -1,5 +1,6 @@
-/* ---------- SIMPLE HOME PAGE FINAL ---------- */
-
+body {
+  background: red !important;
+}
 .home-simple {
   max-width: 1100px;
   margin: 0 auto;
