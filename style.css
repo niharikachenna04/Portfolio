@@ -1,85 +1,92 @@
-/* ---------- Reset ---------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* ---------- SIMPLE HOME PAGE FINAL ---------- */
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background:
-    radial-gradient(circle at top left, rgba(210, 210, 210, 0.55), transparent 30%),
-    radial-gradient(circle at bottom right, rgba(185, 185, 185, 0.45), transparent 28%),
-    #f4f4f4;
-  color: #171717;
-  font-family: "Inter", sans-serif;
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-/* ---------- Hide Old Navbar If Present ---------- */
-.site-header {
-  display: none !important;
-}
-
-/* ---------- Floating Home Button ---------- */
-.floating-home {
-  position: fixed;
-  top: 22px;
-  left: 28px;
-  z-index: 1000;
-  font-size: 14px;
-  font-weight: 600;
-  color: #222;
-}
-
-.floating-home::after {
-  content: "";
-  display: block;
-  height: 2px;
-  background: #222;
-  margin-top: 3px;
-}
-
-.floating-home:hover {
-  opacity: 0.7;
-}
-
-/* ---------- Home Page ---------- */
-.home-page {
-  max-width: 1120px;
+.home-simple {
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 70px 24px;
+  padding: 70px 24px 40px;
 }
 
-.hero-section {
-  margin-bottom: 80px;
+.home-hero-simple {
+  margin-bottom: 70px;
 }
 
-.big-name {
-  font-family: "Poppins", sans-serif;
-  font-size: clamp(80px, 14vw, 180px);
+.home-big-name {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: clamp(80px, 13vw, 180px);
   font-weight: 900;
   line-height: 0.82;
   letter-spacing: -0.08em;
   text-transform: uppercase;
-  color: #171717;
-  margin-bottom: 44px;
+  color: #111;
+  margin-bottom: 48px;
 }
 
-.intro-row {
+.home-intro-simple {
   display: grid;
-  grid-template-columns
+  grid-template-columns: 150px 1fr;
+  gap: 28px;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.home-intro-simple img {
+  width: 150px;
+  height: 170px;
+  object-fit: cover;
+  background: #dedede;
+}
+
+.home-intro-simple h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.home-intro-simple p {
+  font-size: 16px;
+  color: #222;
+  line-height: 1.55;
+  margin-bottom: 8px;
+}
+
+.home-links-simple {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.home-links-simple a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.home-links-simple h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.2;
+}
+
+.home-links-simple p {
+  font-size: 16px;
+  color: #222;
+}
+
+.home-footer-simple {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  padding: 30px 24px;
+  font-size: 16px;
+  color: #111;
+}
+
+@media (max-width: 800px) {
+  .home-intro-simple {
+    grid-template-columns: 1fr;
+  }
+
+  .home-big-name {
+    font-size: clamp(58px, 20vw, 110px);
+  }
+}
