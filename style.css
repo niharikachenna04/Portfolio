@@ -1,23 +1,16 @@
-/* ---------- 1. RESET ---------- */
-/* Removes browser default spacing so the page looks clean */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-/* ---------- 2. PAGE BASE ---------- */
-html {
-  scroll-behavior: smooth;
-}
-
+/* BASE */
 body {
-  font-family: "Inter", Arial, sans-serif;
-  background: #f2f2f2;
+  font-family: "Inter", sans-serif;
+  background: #eeeeee;
   color: #111111;
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 a {
@@ -25,472 +18,186 @@ a {
   text-decoration: none;
 }
 
-img {
-  display: block;
-  max-width: 100%;
+/* HEADER */
+.main-header {
+  padding: 36px 24px;
+  text-align: center;
+  border-bottom: 1px solid #d0d0d0;
 }
 
-
-/* ---------- 3. HOME BUTTON ---------- */
-/* This is the only top button on every page */
-.home-btn,
-.floating-home {
-  position: fixed;
-  top: 22px;
-  left: 28px;
-  z-index: 9999;
+.main-header h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(36px, 7vw, 86px);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
   color: #111111;
-  font-size: 15px;
-  font-weight: 600;
-  text-decoration: none;
-  border-bottom: 2px solid #111111;
-  padding-bottom: 2px;
 }
 
-.home-btn:hover,
-.floating-home:hover {
-  color: #666666;
-  border-bottom-color: #666666;
-}
-
-
-/* ---------- 4. REMOVE OLD NAVBAR IF STILL PRESENT ---------- */
-.site-header,
-header.site-header,
-.navbar,
-.nav-links,
-.brand {
-  display: none !important;
-}
-
-
-/* ---------- 5. HOME PAGE MAIN LAYOUT ---------- */
+/* HOME PAGE */
 .home {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 80px 24px 50px;
+  padding: 70px 24px;
 }
 
-
-/* ---------- 6. BIG NAME ---------- */
-.name {
-  font-family: "Poppins", Arial Black, sans-serif;
-  font-size: clamp(82px, 13vw, 175px);
-  font-weight: 900;
-  line-height: 0.82;
-  letter-spacing: -0.08em;
-  text-transform: uppercase;
-  color: #111111;
-  margin-bottom: 52px;
-}
-
-
-/* ---------- 7. INTRO SECTION ---------- */
-/* Photo + text next to each other */
-.intro {
+/* HERO */
+.hero {
   display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 34px;
-  align-items: start;
-  max-width: 900px;
-  margin: 0 auto 70px;
+  grid-template-columns: 260px 1fr;
+  gap: 44px;
+  align-items: center;
+  margin-bottom: 80px;
 }
 
-.intro img {
-  width: 160px;
-  height: 180px;
-  object-fit: cover;
+.hero-photo {
   background: #d8d8d8;
-  border: 1px solid #cccccc;
+  border: 1px solid #c8c8c8;
+  padding: 10px;
 }
 
-.intro h2 {
-  font-size: 24px;
-  font-weight: 800;
-  color: #111111;
-  margin-bottom: 12px;
-}
-
-.intro p {
-  font-size: 16px;
-  color: #333333;
-  max-width: 760px;
-  margin-bottom: 10px;
-}
-
-
-/* ---------- 8. HOME PAGE LINKS ---------- */
-/* About Me, Course Overview, Projects, etc. */
-.links {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.links a {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.links h3 {
-  font-size: 21px;
-  font-weight: 800;
-  color: #111111;
-  line-height: 1.2;
-}
-
-.links h3::after {
-  content: " ↗";
-  font-size: 15px;
-}
-
-.links p {
-  font-size: 15px;
-  color: #555555;
-  margin-top: 3px;
-}
-
-.links a:hover h3 {
-  color: #555555;
-}
-
-.links a:hover p {
-  color: #777777;
-}
-
-
-/* ---------- 9. FOOTER ---------- */
-.footer,
-.site-footer {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 40px 24px;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  color: #555555;
-  font-size: 14px;
-  border-top: 1px solid #d2d2d2;
-}
-
-.footer-inner {
+.hero-photo img {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-
-/* ======================================================
-   INNER PAGES: ABOUT, COURSE, PROJECTS, WEEKLY ARTICLES
-   ====================================================== */
-
-
-/* ---------- 10. COMMON PAGE WRAPPER ---------- */
-.page-shell {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 90px 24px;
-}
-
-.page-intro {
-  margin-bottom: 48px;
-}
-
-.kicker {
-  display: inline-block;
-  margin-bottom: 14px;
-  color: #666666;
-  font-size: 12px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.page-title {
-  font-family: "Poppins", Arial Black, sans-serif;
-  font-size: clamp(48px, 8vw, 92px);
-  font-weight: 900;
-  line-height: 0.95;
-  letter-spacing: -0.06em;
-  color: #111111;
-  margin-bottom: 18px;
-}
-
-.page-description {
-  max-width: 760px;
-  color: #444444;
-  font-size: 16px;
-}
-
-.section {
-  margin: 38px 0;
-}
-
-.section-title {
-  font-family: "Poppins", Arial Black, sans-serif;
-  font-size: clamp(34px, 4vw, 56px);
-  font-weight: 900;
-  line-height: 1;
-  letter-spacing: -0.04em;
-  color: #111111;
-  margin-bottom: 16px;
-}
-
-.section-subtitle {
-  color: #555555;
-  font-size: 15px;
-  max-width: 760px;
-  margin-bottom: 28px;
-}
-
-
-/* ---------- 11. GREY BOXES / CARDS ---------- */
-.reflection-card,
-.info-card,
-.article-expand,
-.timeline-item,
-.intro-panel,
-.course-card {
-  background: #ffffff;
-  border: 1px solid #d9d9d9;
-  border-radius: 24px;
-  padding: 30px;
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
-}
-
-.reflection-card h3,
-.info-card h3,
-.article-expand h3,
-.timeline-item h3,
-.course-card h3 {
-  font-family: "Poppins", Arial, sans-serif;
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 1.15;
-  color: #111111;
-  margin-bottom: 12px;
-}
-
-.reflection-card p,
-.info-card p,
-.article-body p,
-.timeline-item p,
-.course-card p {
-  color: #444444;
-  font-size: 15px;
-}
-
-.reflection-card p + p,
-.article-body p + p,
-.course-card p + p {
-  margin-top: 12px;
-}
-
-.reflection-card ul,
-.course-list {
-  list-style: disc;
-  padding-left: 22px;
-  margin-top: 10px;
-}
-
-.reflection-card li,
-.course-list li {
-  margin-bottom: 10px;
-  color: #444444;
-}
-
-
-/* ---------- 12. INFO GRID ---------- */
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-
-/* ---------- 13. ABOUT PAGE SUPPORT ---------- */
-.about-grid {
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 34px;
-  align-items: start;
-}
-
-.about-photo {
-  min-height: 430px;
-  background: #dddddd;
-  border: 1px solid #cccccc;
-  border-radius: 22px;
-  overflow: hidden;
-}
-
-.about-photo img {
-  width: 100%;
-  height: 100%;
+  height: 320px;
   object-fit: cover;
+  display: block;
 }
 
-.about-content {
-  display: grid;
-  gap: 18px;
+.hero-text h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(52px, 8vw, 110px);
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+  margin-bottom: 18px;
+  color: #111111;
 }
 
-.info-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 8px;
+.hero-text h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #2c2c2c;
 }
 
-.chip {
-  padding: 9px 14px;
-  border-radius: 999px;
-  background: #e5e5e5;
-  border: 1px solid #d0d0d0;
-  color: #333333;
-  font-size: 13px;
-  font-weight: 600;
+.hero-text p {
+  font-size: 16px;
+  color: #444444;
+  max-width: 720px;
+  margin-bottom: 12px;
 }
 
-
-/* ---------- 14. COURSE PAGE VERTICAL BOXES ---------- */
-.course-stack {
-  display: grid;
-  gap: 24px;
-}
-
-.course-card {
-  max-width: 900px;
-}
-
-
-/* ---------- 15. WEEKLY ARTICLES CARDS ---------- */
-.project-grid {
+/* PAGE LINKS */
+.page-links {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 38px;
+  gap: 28px;
 }
 
-.project-card {
-  display: block;
-  color: #111111;
-}
-
-.project-thumb {
-  height: 230px;
-  background: linear-gradient(135deg, #e3e3e3, #f8f8f8);
+.page-card {
+  background: #ffffff;
   border: 1px solid #d4d4d4;
-  border-radius: 10px;
-  margin-bottom: 14px;
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.05);
   transition: 0.25s ease;
 }
 
-.project-card:hover .project-thumb {
+.page-card:hover {
   transform: translateY(-4px);
-  background: linear-gradient(135deg, #d9d9d9, #f2f2f2);
+  background: #f7f7f7;
 }
 
-.project-title {
-  font-family: "Poppins", Arial, sans-serif;
-  font-size: 23px;
-  font-weight: 800;
+.page-card h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  margin-bottom: 8px;
   color: #111111;
-  line-height: 1;
 }
 
-.project-title::after {
+.page-card h3::after {
   content: " ↗";
   font-size: 15px;
 }
 
-.project-category {
-  font-size: 13px;
-  color: #666666;
-  margin-top: 5px;
+.page-card p {
+  color: #555555;
+  font-size: 15px;
 }
 
-
-/* ---------- 16. EXPANDABLE ARTICLE PAGES ---------- */
-.article-expand summary {
-  list-style: none;
-  cursor: pointer;
+/* FOOTER */
+.footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 36px 24px;
+  border-top: 1px solid #d0d0d0;
   display: flex;
   justify-content: space-between;
-  gap: 18px;
+  gap: 20px;
+  color: #444444;
+  font-size: 14px;
 }
 
-.article-expand summary::-webkit-details-marker {
-  display: none;
+.footer a {
+  border-bottom: 1px solid #444444;
 }
 
-.article-body {
-  margin-top: 18px;
+/* INNER PAGES BASIC STYLE */
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 24px;
 }
 
-.summary-indicator {
-  font-size: 22px;
-  color: #555555;
+.page h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(46px, 8vw, 90px);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+  margin-bottom: 28px;
 }
 
-
-/* ---------- 17. LEARNING JOURNEY / TIMELINE ---------- */
-.timeline {
-  display: grid;
-  gap: 22px;
-}
-
-.timeline-item span {
-  display: inline-block;
-  margin-bottom: 8px;
-  color: #666666;
-  font-size: 12px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-
-/* ---------- 18. SIMPLE CARD FALLBACK ---------- */
-/* In case any page still uses class="card" */
-.card {
+.box {
   background: #ffffff;
-  border: 1px solid #d9d9d9;
+  border: 1px solid #d4d4d4;
   border-radius: 18px;
-  padding: 22px;
-  margin-bottom: 20px;
+  padding: 28px;
+  margin-bottom: 26px;
   box-shadow: 0 14px 35px rgba(0, 0, 0, 0.05);
 }
 
+.box h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
 
-/* ---------- 19. MOBILE RESPONSIVE ---------- */
-@media (max-width: 900px) {
-  .home {
-    padding: 75px 20px 40px;
-  }
+.box p {
+  color: #444444;
+  margin-bottom: 10px;
+}
 
-  .name {
-    font-size: clamp(60px, 20vw, 110px);
-  }
+.home-link {
+  position: fixed;
+  top: 20px;
+  left: 24px;
+  font-weight: 600;
+  border-bottom: 2px solid #111111;
+}
 
-  .intro {
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .hero {
     grid-template-columns: 1fr;
-    margin-left: 0;
   }
 
-  .about-grid,
-  .info-grid,
-  .project-grid {
+  .hero-photo img {
+    height: 260px;
+  }
+
+  .page-links {
     grid-template-columns: 1fr;
   }
 
-  .project-thumb {
-    height: 210px;
-  }
-
-  .footer,
-  .site-footer,
-  .footer-inner {
+  .footer {
     flex-direction: column;
   }
 }
