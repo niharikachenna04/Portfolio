@@ -417,6 +417,21 @@ a {
     grid-template-columns: 1fr;
   }
 }
+.video-block {
+  margin-top: 22px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: #d5d0d3;
+  box-shadow: var(--shadow);
+}
+
+.video-block video {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  background: #000;
+}
 
 
 
