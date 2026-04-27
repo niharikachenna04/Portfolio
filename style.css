@@ -383,5 +383,47 @@ a {
   letter-spacing: -0.05em !important;
   white-space: nowrap !important;
 }
+/* WEEKLY AI NEWS PAGE */
+.five-news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.five-news-grid .news-card:last-child {
+  grid-column: 1 / -1;
+}
+
+.news-card {
+  min-height: 330px;
+  border-radius: var(--radius-md);
+  transition: 0.25s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 26px 56px rgba(24, 24, 24, 0.12);
+}
+
+.news-card p {
+  margin-top: 10px;
+  color: var(--body);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.news-card .thumb {
+  min-height: 220px;
+}
+
+@media (max-width: 900px) {
+  .five-news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .five-news-grid .news-card:last-child {
+    grid-column: auto;
+  }
+}
 
 
