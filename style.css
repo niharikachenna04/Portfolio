@@ -370,3 +370,9 @@ a {
     width: 100%;
   }
 }
+.about-title {
+  font-size: clamp(3rem, 7vw, 5.4rem);
+  line-height: 1;
+  letter-spacing: -0.06em;
+  white-space: nowrap;
+}
