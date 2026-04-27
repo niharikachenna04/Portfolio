@@ -25,7 +25,7 @@
       <span class="section-kicker">AI News 02</span>
       <h1 class="hero-title about-title">AI NEWS 2</h1>
       <p class="hero-copy">
-        A weekly article review focused on how advanced AI could influence society, professional decision-making,
+        A weekly article review focused on advanced AI, society, professional decision-making,
         and future AEC practice.
       </p>
     </section>
@@ -33,7 +33,9 @@
     <section class="page-section">
       <div class="panel">
         <span class="section-kicker">Article</span>
-        <h2 class="section-title">The Bold Claim That AGI And AI Superintelligence Will Radically Fragment Society</h2>
+        <h2 class="section-title">
+          The Bold Claim That AGI And AI Superintelligence Will Radically Fragment Society
+        </h2>
         <p class="section-text">
           <strong>Source:</strong> Forbes<br />
           <strong>Author:</strong> Lance B. Eliot<br />
@@ -50,9 +52,10 @@
         <span class="section-kicker">Article Focus</span>
         <h2 class="section-title">Advanced AI and social impact</h2>
         <p class="section-text">
-          This article explains how advanced AI, especially Artificial General Intelligence and Artificial
-          Superintelligence, could create new divisions in society. It focuses on how people may disagree
-          about which AI systems to trust, who controls them, and how much authority AI should have.
+          This article explains how advanced AI, especially Artificial General Intelligence and
+          Artificial Superintelligence, could create new divisions in society. It focuses on how
+          people may disagree about which AI systems to trust, who controls them, and how much
+          authority AI should have.
         </p>
       </div>
     </section>
@@ -62,19 +65,21 @@
         <span class="section-kicker">Summary</span>
         <h2 class="section-title">Summary of the article</h2>
         <p class="section-text">
-          The article explains that AGI and AI superintelligence may not automatically bring society together.
-          Instead, powerful AI systems could create fragmentation because different groups may trust different
-          AI tools, follow different AI-generated answers, or disagree about which system is correct.
+          The article explains that AGI and AI superintelligence may not automatically bring society
+          together. Instead, powerful AI systems could create fragmentation because different groups
+          may trust different AI tools, follow different AI-generated answers, or disagree about
+          which system is correct.
         </p>
         <p class="section-text">
-          A major point in the article is that the risk is not only the technology itself, but also how humans
-          respond to it. If people begin treating AI as an ultimate authority, disagreements about control,
-          ethics, responsibility, and trust may become more serious.
+          A major point in the article is that the risk is not only the technology itself, but also
+          how humans respond to it. If people begin treating AI as an ultimate authority,
+          disagreements about control, ethics, responsibility, and trust may become more serious.
         </p>
         <p class="section-text">
-          The article also connects advanced AI to broader social impacts such as political division, economic
-          disruption, and changes in professional decision-making. It suggests that governance, accountability,
-          and human oversight will be important as AI systems become more powerful and influential.
+          The article also connects advanced AI to broader social impacts such as political division,
+          economic disruption, and changes in professional decision-making. It suggests that
+          governance, accountability, and human oversight will be important as AI systems become more
+          powerful and influential.
         </p>
       </div>
     </section>
@@ -92,7 +97,8 @@
           <span class="section-kicker">01</span>
           <h3>AI Authority</h3>
           <p>
-            Advanced AI may influence major decisions, but people may disagree about how much authority AI should have.
+            Advanced AI may influence major decisions, but people may disagree about how much
+            authority AI should have.
           </p>
         </article>
 
@@ -100,7 +106,8 @@
           <span class="section-kicker">02</span>
           <h3>Social Fragmentation</h3>
           <p>
-            Different groups may depend on different AI systems, which could create new forms of division.
+            Different groups may depend on different AI systems, which could create new forms of
+            division.
           </p>
         </article>
 
@@ -116,7 +123,8 @@
           <span class="section-kicker">04</span>
           <h3>Human Oversight</h3>
           <p>
-            Even advanced AI still requires human responsibility, especially for decisions that affect society and industry.
+            Even advanced AI still requires human responsibility, especially for decisions that affect
+            society and industry.
           </p>
         </article>
       </div>
@@ -127,14 +135,15 @@
         <span class="section-kicker">AEC Relevance</span>
         <h2 class="section-title">Connection to the AEC industry</h2>
         <p class="section-text">
-          This article is relevant to the AEC industry because advanced AI could influence design decisions,
-          structural analysis, cost modeling, scheduling, and project planning. If firms depend heavily on AI
-          systems, questions about accuracy, responsibility, legal risk, and professional judgment become important.
+          This article is relevant to the AEC industry because advanced AI could influence design
+          decisions, structural analysis, cost modeling, scheduling, and project planning. If firms
+          depend heavily on AI systems, questions about accuracy, responsibility, legal risk, and
+          professional judgment become important.
         </p>
         <p class="section-text">
-          It also connects to possible industry fragmentation. Different firms may use different AI platforms,
-          which could create issues with standards, workflows, and compatibility. Larger companies with access
-          to stronger AI systems may gain an advantage over smaller firms.
+          It also connects to possible industry fragmentation. Different firms may use different AI
+          platforms, which could create issues with standards, workflows, and compatibility. Larger
+          companies with access to stronger AI systems may gain an advantage over smaller firms.
         </p>
       </div>
     </section>
@@ -144,13 +153,13 @@
         <span class="section-kicker">Infographic</span>
         <h2 class="section-title">AI reshaping AEC workflows</h2>
         <p class="section-text">
-          This infographic was created using NotebookLM to visually organize the major ideas from the article.
-          It highlights labor shortage challenges, design and engineering intelligence, proactive field execution,
-          digital workflows, and AI use across project phases.
+          This infographic was created using NotebookLM to visually organize the major ideas from
+          this article. It highlights labor shortage challenges, design and engineering intelligence,
+          proactive field execution, digital workflows, and AI use across project phases.
         </p>
 
         <div class="image-block">
-          <img src="week-2-infographic.png" alt="NotebookLM infographic about AI reshaping AEC workflows" />
+          <img src="week-2%20Infographic.png" alt="NotebookLM infographic about AI reshaping AEC workflows" />
         </div>
       </div>
     </section>
@@ -160,7 +169,8 @@
         <span class="section-kicker">Video Resource</span>
         <h2 class="section-title">Supporting video link</h2>
         <p class="section-text">
-          A YouTube video resource was used to support this Week 2 article review and provide additional context.
+          A YouTube video resource was used to support this Week 2 article review and provide
+          additional context.
         </p>
         <p class="section-text">
           <a href="https://youtu.be/ihj7WNt12Hk?si=ditKbOxAMLSUYAYd" target="_blank">
@@ -175,12 +185,13 @@
         <span class="section-kicker">Tools Used</span>
         <h2 class="section-title">NotebookLM and video research</h2>
         <p class="section-text">
-          I used NotebookLM to create the infographic for this article. The tool helped turn the article’s main
-          ideas into a visual structure that is easier to read and present in the portfolio.
+          I used NotebookLM to create the infographic for this article. The tool helped turn the
+          article’s main ideas into a visual structure that is easier to read and present in the
+          portfolio.
         </p>
         <p class="section-text">
-          I also used the supporting video link to strengthen my understanding of how advanced AI may affect
-          decision-making, industry standards, and future AEC workflows.
+          I also used the supporting video link to strengthen my understanding of how advanced AI may
+          affect decision-making, industry standards, and future AEC workflows.
         </p>
       </div>
     </section>
