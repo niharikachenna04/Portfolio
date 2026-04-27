@@ -390,10 +390,6 @@ a {
   gap: 22px;
 }
 
-.five-news-grid .news-card:last-child {
-  grid-column: 1 / -1;
-}
-
 .news-card {
   min-height: 330px;
   border-radius: var(--radius-md);
@@ -420,10 +416,8 @@ a {
   .five-news-grid {
     grid-template-columns: 1fr;
   }
-
-  .five-news-grid .news-card:last-child {
-    grid-column: auto;
-  }
 }
+
+
 
 
