@@ -432,6 +432,20 @@ a {
   max-height: 520px;
   background: #000;
 }
+.image-block {
+  margin-top: 22px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: #d5d0d3;
+  box-shadow: var(--shadow);
+}
+
+.image-block img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 
 
