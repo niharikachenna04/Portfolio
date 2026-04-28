@@ -974,202 +974,182 @@ a {
   }
 }
 
-/* ===== REVIEWING MINI AGENTS PAGE ===== */
+/* ===== REVIEWING CUSTOM GPTS PAGE ONLY ===== */
 
-.review-page {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 90px 24px 70px;
+.custom-gpt-review-page .project-detail-hero {
+  padding: 92px 0 64px;
 }
 
-.review-hero {
-  max-width: 900px;
-  margin-bottom: 55px;
+.custom-gpt-review-page .project-detail-hero h1 {
+  max-width: 980px;
+  margin: 18px 0 20px;
+  color: var(--text);
+  font-size: clamp(3rem, 6.5vw, 5.8rem);
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+  font-weight: 900;
 }
 
-.review-hero h2 {
-  font-size: 76px;
-  line-height: 0.9;
-  letter-spacing: -5px;
-  color: #1f1d1f;
-  margin: 14px 0 24px;
-}
-
-.review-hero p {
-  font-size: 17px;
-  line-height: 1.7;
-  color: #4f4a4f;
+.custom-gpt-review-page .project-detail-hero p {
   max-width: 780px;
+  color: var(--body);
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
-.review-buttons,
-.review-link-buttons {
+.custom-gpt-review-page .panel {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(216, 211, 214, 0.74));
+}
+
+.custom-gpt-review-page .quote-box {
+  background: linear-gradient(145deg, #5e565d, #827780);
+}
+
+.custom-gpt-review-page .project-action-row {
   display: flex;
-  gap: 16px;
-  margin-top: 30px;
   flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 26px;
 }
 
-.review-buttons a,
-.review-link-buttons a {
-  background: #6d646d;
-  color: white;
+.custom-gpt-review-page .project-main-button {
+  min-height: 46px;
+  padding: 0 22px;
+  border-radius: 999px;
+  background: var(--dark-grey);
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 900;
+  box-shadow: 0 18px 36px rgba(94, 86, 93, 0.18);
+}
+
+.custom-gpt-review-page .project-main-button:hover {
+  background: #4f484f;
+}
+
+.custom-gpt-review-page .project-secondary-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 46px;
+  padding: 0 22px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.58);
+  color: var(--dark-grey);
+  font-size: 0.88rem;
+  font-weight: 900;
   text-decoration: none;
-  padding: 14px 28px;
-  border-radius: 40px;
-  font-weight: 800;
-  font-size: 14px;
 }
 
-.review-buttons .outline-btn,
-.review-link-buttons .outline-btn {
-  background: white;
-  color: #6d646d;
-  border: 1px solid #d8d3d8;
-}
-
-.review-feature-card,
-.review-section,
-.review-final,
-.review-link-card {
-  background: #ffffff;
-  border-radius: 34px;
-  padding: 42px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
-  margin-bottom: 34px;
-}
-
-.review-feature-card h3,
-.review-section h3,
-.review-final h3,
-.review-link-card h3 {
-  font-size: 34px;
-  line-height: 1.2;
-  color: #1f1d1f;
-  margin: 14px 0 22px;
-}
-
-.review-feature-card p,
-.review-section p,
-.review-final p {
-  font-size: 16px;
-  line-height: 1.75;
-  color: #555055;
-  margin-bottom: 14px;
-}
-
-.review-grid {
+.custom-gpt-review-page .benefit-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
-  margin-bottom: 34px;
-}
-
-.review-card {
-  background: #ffffff;
-  border-radius: 34px;
-  padding: 38px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
-}
-
-.review-card h3 {
-  font-size: 30px;
-  line-height: 1.2;
-  margin: 14px 0 18px;
-  color: #1f1d1f;
-}
-
-.review-card p,
-.review-card li {
-  font-size: 15px;
-  line-height: 1.75;
-  color: #555055;
-}
-
-.review-card ul {
-  padding-left: 20px;
-}
-
-.dark-review-card {
-  background: linear-gradient(135deg, #5f565f, #8b8188);
-}
-
-.dark-review-card h3,
-.dark-review-card p,
-.dark-review-card li,
-.dark-review-card .section-label {
-  color: white;
-}
-
-.comparison-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
   margin-top: 28px;
 }
 
-.comparison-grid div {
-  background: #f5f3f3;
-  border-radius: 26px;
-  padding: 26px;
-}
-
-.comparison-grid span {
-  display: inline-block;
-  background: #6d646d;
-  color: white;
-  padding: 8px 13px;
+.custom-gpt-review-page .benefit-grid article {
+  min-height: 220px;
+  padding: 24px;
   border-radius: 20px;
-  font-weight: 900;
-  margin-bottom: 15px;
+  background: #f1eeee;
 }
 
-.comparison-grid h4 {
-  font-size: 21px;
+.custom-gpt-review-page .benefit-grid article:nth-child(2) {
+  background: #d8d3d6;
+}
+
+.custom-gpt-review-page .benefit-grid article:nth-child(3) {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.35), rgba(94, 86, 93, 0.16)),
+    #cec8cc;
+}
+
+.custom-gpt-review-page .benefit-grid h3 {
   margin-bottom: 12px;
-  color: #1f1d1f;
+  color: var(--text);
+  font-size: 1.08rem;
+  line-height: 1.2;
+  font-weight: 900;
 }
 
-.comparison-grid p {
-  font-size: 15px;
-  line-height: 1.65;
-  color: #555055;
+.custom-gpt-review-page .benefit-grid p {
+  color: var(--body);
+  font-size: 0.94rem;
+  line-height: 1.58;
 }
 
-.soft-review-section {
-  background: linear-gradient(135deg, #ffffff, #f1eef1);
-}
-
-.review-final {
-  background: linear-gradient(135deg, #5f565f, #8b8188);
-}
-
-.review-final h3,
-.review-final p,
-.review-final .section-label {
-  color: white;
-}
-
-.review-link-card {
-  display: flex;
-  justify-content: space-between;
+.custom-gpt-review-page .project-link-panel {
+  padding: 38px 42px;
+  border-radius: 32px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(94, 86, 93, 0.14)),
+    linear-gradient(to right, rgba(255, 255, 255, 0.18) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.18) 1px, transparent 1px),
+    #d4ced2;
+  background-size: auto, 28px 28px, 28px 28px, auto;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 34px;
   align-items: center;
-  gap: 35px;
+}
+
+.custom-gpt-review-page .project-link-panel h2 {
+  color: var(--text);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-weight: 900;
+}
+
+.custom-gpt-review-page .project-link-panel p {
+  margin-top: 16px;
+  color: var(--body);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.custom-gpt-review-page .project-link-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
+.custom-gpt-review-page .project-link-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 26px;
+  border-radius: 999px;
+  background: var(--dark-grey);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 900;
+}
+
+.custom-gpt-review-page .project-link-actions .secondary-project-link {
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--dark-grey);
+  border: 1px solid rgba(24, 24, 24, 0.12);
 }
 
 @media (max-width: 900px) {
-  .review-hero h2 {
-    font-size: 48px;
-    letter-spacing: -3px;
-  }
-
-  .review-grid,
-  .comparison-grid {
+  .custom-gpt-review-page .benefit-grid,
+  .custom-gpt-review-page .project-link-panel {
     grid-template-columns: 1fr;
   }
 
-  .review-link-card {
-    flex-direction: column;
-    align-items: flex-start;
+  .custom-gpt-review-page .project-link-actions {
+    justify-content: flex-start;
+  }
+
+  .custom-gpt-review-page .project-link-actions a {
+    width: 100%;
   }
 }
+
