@@ -225,11 +225,14 @@ a {
   box-shadow: 0 26px 56px rgba(24, 24, 24, 0.12);
 }
 
-.thumb-one {
-  background-image: url("ABOUT%20ME.jpeg"); /* your image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.thumb {
+  min-height: 220px;
+  background:
+    linear-gradient(135deg, rgba(80, 74, 79, 0.18), rgba(255, 255, 255, 0.2)),
+    linear-gradient(to right, rgba(255, 255, 255, 0.22) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.22) 1px, transparent 1px),
+    #d5d0d3;
+  background-size: auto, 28px 28px, 28px 28px, auto;
 }
 
 .thumb-two {
@@ -678,54 +681,168 @@ a {
   height: 100%;
   object-fit: cover;
 }
-/* PROJECTS PAGE ONLY */
-.projects-page .project-board {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 22px;
-}
+/* ===== PROJECTS PAGE UPDATED DESIGN ===== */
 
-.projects-page .project-card {
-  min-height: 260px;
+.simple-header {
+  height: 72px;
+  background: #f5f3f3;
+  border-bottom: 1px solid #e8e4e4;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
-.projects-page .project-card h2 {
-  margin: 4px 0 16px;
-  color: var(--text);
-  font-size: clamp(1.6rem, 2.6vw, 2.35rem);
-  line-height: 1.05;
-  letter-spacing: -0.04em;
+.simple-header h1 {
+  font-size: 13px;
+  letter-spacing: 6px;
   font-weight: 900;
+  color: #1f1d1f;
 }
 
-.projects-page .project-card p {
-  margin-top: 0;
-  color: var(--body);
-  font-size: 0.98rem;
-  line-height: 1.6;
+.projects-page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 85px 24px 70px;
 }
 
-.projects-page .project-card p + p {
-  margin-top: 14px;
+.section-label {
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: 900;
+  color: #777077;
+  text-transform: uppercase;
 }
 
-.projects-page .project-takeaway {
-  padding: 38px;
+.projects-hero {
+  margin-bottom: 55px;
 }
 
-.projects-page .project-takeaway h3 {
-  max-width: 760px;
+.projects-hero h2 {
+  font-size: 78px;
+  line-height: 0.9;
+  letter-spacing: -5px;
+  color: #1f1d1f;
+  margin: 14px 0 24px;
+}
+
+.projects-hero p {
+  max-width: 780px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4f4a4f;
+}
+
+.project-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-bottom: 70px;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 34px;
+  border-radius: 30px;
+  min-height: 300px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  transition: 0.3s ease;
+}
+
+.project-tag {
+  display: inline-block;
+  background: #eee9ee;
+  color: #6d646d;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+.project-card h3 {
+  font-size: 30px;
+  line-height: 1.1;
+  color: #1f1d1f;
+  margin-bottom: 18px;
+}
+
+.project-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555055;
+  margin-bottom: 14px;
+}
+
+.featured-project {
+  background: linear-gradient(135deg, #5f565f, #8b8188);
+}
+
+.featured-project h3,
+.featured-project p {
+  color: white;
+}
+
+.featured-project .project-tag {
+  background: rgba(255,255,255,0.18);
+  color: white;
+}
+
+.project-summary-card {
+  background: #ffffff;
+  padding: 36px 40px;
+  border-radius: 32px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+}
+
+.project-summary-card h3 {
+  font-size: 28px;
+  line-height: 1.25;
+  color: #1f1d1f;
+  margin: 12px 0;
+}
+
+.project-summary-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555055;
+  max-width: 720px;
+}
+
+.project-summary-card a {
+  background: #6d646d;
+  color: white;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.project-summary-card a:hover {
+  background: #504850;
 }
 
 @media (max-width: 900px) {
-  .projects-page .project-board {
+  .projects-hero h2 {
+    font-size: 52px;
+  }
+
+  .project-card-grid {
     grid-template-columns: 1fr;
   }
 
-  .projects-page .project-card {
-    min-height: auto;
+  .project-summary-card {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
