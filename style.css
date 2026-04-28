@@ -733,3 +733,139 @@ a {
     min-height: auto;
   }
 }
+/* ===== MINI AGENT PROJECT PAGE ===== */
+
+.mini-agent-page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 85px 24px 70px;
+}
+
+.mini-hero {
+  max-width: 850px;
+  margin-bottom: 60px;
+}
+
+.mini-hero h2 {
+  font-size: 72px;
+  line-height: 0.9;
+  letter-spacing: -5px;
+  margin: 14px 0 24px;
+  color: #1f1d1f;
+}
+
+.mini-hero p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #4f4a4f;
+}
+
+.roadmap-card,
+.impact-section,
+.curiosity-card {
+  background: #ffffff;
+  border-radius: 32px;
+  padding: 40px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+  margin-bottom: 35px;
+}
+
+.roadmap-card h3,
+.impact-section h3,
+.curiosity-card h3 {
+  font-size: 32px;
+  margin: 12px 0 30px;
+}
+
+.roadmap-grid,
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.roadmap-grid div,
+.impact-grid div {
+  background: #f5f3f3;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.roadmap-grid span {
+  display: inline-block;
+  background: #6d646d;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+
+.roadmap-grid h4,
+.impact-grid h4 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #1f1d1f;
+}
+
+.roadmap-grid p,
+.impact-grid p,
+.curiosity-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555055;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 35px;
+}
+
+.info-card {
+  background: white;
+  border-radius: 32px;
+  padding: 38px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+}
+
+.info-card h3 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 14px 0 18px;
+}
+
+.info-card p,
+.info-card li {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555055;
+}
+
+.info-card ul {
+  padding-left: 20px;
+}
+
+.dark-card {
+  background: linear-gradient(135deg, #5f565f, #8b8188);
+}
+
+.dark-card h3,
+.dark-card p,
+.dark-card .section-label {
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .mini-hero h2 {
+    font-size: 48px;
+    letter-spacing: -3px;
+  }
+
+  .roadmap-grid,
+  .impact-grid,
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
