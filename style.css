@@ -225,14 +225,11 @@ a {
   box-shadow: 0 26px 56px rgba(24, 24, 24, 0.12);
 }
 
-.thumb {
-  min-height: 220px;
-  background:
-    linear-gradient(135deg, rgba(80, 74, 79, 0.18), rgba(255, 255, 255, 0.2)),
-    linear-gradient(to right, rgba(255, 255, 255, 0.22) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.22) 1px, transparent 1px),
-    #d5d0d3;
-  background-size: auto, 28px 28px, 28px 28px, auto;
+.thumb-one {
+  background-image: url("ABOUT%20ME.jpeg"); /* your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .thumb-two {
