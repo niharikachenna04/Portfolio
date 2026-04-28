@@ -681,7 +681,23 @@ a {
   height: 100%;
   object-fit: cover;
 }
-/* ===== PROJECTS PAGE DESIGN ===== */
+/* ===== PROJECTS PAGE UPDATED DESIGN ===== */
+
+.simple-header {
+  height: 72px;
+  background: #f5f3f3;
+  border-bottom: 1px solid #e8e4e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.simple-header h1 {
+  font-size: 13px;
+  letter-spacing: 6px;
+  font-weight: 900;
+  color: #1f1d1f;
+}
 
 .projects-page {
   max-width: 1120px;
@@ -689,12 +705,20 @@ a {
   padding: 85px 24px 70px;
 }
 
+.section-label {
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: 900;
+  color: #777077;
+  text-transform: uppercase;
+}
+
 .projects-hero {
   margin-bottom: 55px;
 }
 
 .projects-hero h2 {
-  font-size: 74px;
+  font-size: 78px;
   line-height: 0.9;
   letter-spacing: -5px;
   color: #1f1d1f;
@@ -719,15 +743,14 @@ a {
   background: #ffffff;
   padding: 34px;
   border-radius: 30px;
-  min-height: 320px;
+  min-height: 300px;
   box-shadow: 0 18px 45px rgba(0,0,0,0.06);
   border: 1px solid rgba(0,0,0,0.04);
-  transition: all 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 25px 60px rgba(0,0,0,0.09);
+  transition: 0.3s ease;
 }
 
 .project-tag {
@@ -739,12 +762,11 @@ a {
   font-size: 11px;
   letter-spacing: 2px;
   font-weight: 900;
-  text-transform: uppercase;
   margin-bottom: 18px;
 }
 
 .project-card h3 {
-  font-size: 28px;
+  font-size: 30px;
   line-height: 1.1;
   color: #1f1d1f;
   margin-bottom: 18px;
@@ -759,7 +781,6 @@ a {
 
 .featured-project {
   background: linear-gradient(135deg, #5f565f, #8b8188);
-  color: white;
 }
 
 .featured-project h3,
@@ -805,19 +826,15 @@ a {
   border-radius: 40px;
   font-weight: 800;
   font-size: 14px;
-  white-space: nowrap;
 }
 
 .project-summary-card a:hover {
   background: #504850;
 }
 
-/* RESPONSIVE */
-
 @media (max-width: 900px) {
   .projects-hero h2 {
     font-size: 52px;
-    letter-spacing: -3px;
   }
 
   .project-card-grid {
