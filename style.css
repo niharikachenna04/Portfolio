@@ -1099,3 +1099,203 @@ a {
     align-items: flex-start;
   }
 }
+
+/* ===== REVIEWING MINI AGENTS PAGE ===== */
+
+.review-page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 90px 24px 70px;
+}
+
+.review-hero {
+  max-width: 900px;
+  margin-bottom: 55px;
+}
+
+.review-hero h2 {
+  font-size: 76px;
+  line-height: 0.9;
+  letter-spacing: -5px;
+  color: #1f1d1f;
+  margin: 14px 0 24px;
+}
+
+.review-hero p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #4f4a4f;
+  max-width: 780px;
+}
+
+.review-buttons,
+.review-link-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.review-buttons a,
+.review-link-buttons a {
+  background: #6d646d;
+  color: white;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.review-buttons .outline-btn,
+.review-link-buttons .outline-btn {
+  background: white;
+  color: #6d646d;
+  border: 1px solid #d8d3d8;
+}
+
+.review-feature-card,
+.review-section,
+.review-final,
+.review-link-card {
+  background: #ffffff;
+  border-radius: 34px;
+  padding: 42px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+  margin-bottom: 34px;
+}
+
+.review-feature-card h3,
+.review-section h3,
+.review-final h3,
+.review-link-card h3 {
+  font-size: 34px;
+  line-height: 1.2;
+  color: #1f1d1f;
+  margin: 14px 0 22px;
+}
+
+.review-feature-card p,
+.review-section p,
+.review-final p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #555055;
+  margin-bottom: 14px;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 34px;
+}
+
+.review-card {
+  background: #ffffff;
+  border-radius: 34px;
+  padding: 38px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+}
+
+.review-card h3 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 14px 0 18px;
+  color: #1f1d1f;
+}
+
+.review-card p,
+.review-card li {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #555055;
+}
+
+.review-card ul {
+  padding-left: 20px;
+}
+
+.dark-review-card {
+  background: linear-gradient(135deg, #5f565f, #8b8188);
+}
+
+.dark-review-card h3,
+.dark-review-card p,
+.dark-review-card li,
+.dark-review-card .section-label {
+  color: white;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 28px;
+}
+
+.comparison-grid div {
+  background: #f5f3f3;
+  border-radius: 26px;
+  padding: 26px;
+}
+
+.comparison-grid span {
+  display: inline-block;
+  background: #6d646d;
+  color: white;
+  padding: 8px 13px;
+  border-radius: 20px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.comparison-grid h4 {
+  font-size: 21px;
+  margin-bottom: 12px;
+  color: #1f1d1f;
+}
+
+.comparison-grid p {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #555055;
+}
+
+.soft-review-section {
+  background: linear-gradient(135deg, #ffffff, #f1eef1);
+}
+
+.review-final {
+  background: linear-gradient(135deg, #5f565f, #8b8188);
+}
+
+.review-final h3,
+.review-final p,
+.review-final .section-label {
+  color: white;
+}
+
+.review-link-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+}
+
+@media (max-width: 900px) {
+  .review-hero h2 {
+    font-size: 48px;
+    letter-spacing: -3px;
+  }
+
+  .review-grid,
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-link-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
