@@ -669,3 +669,15 @@ a {
     align-items: flex-start;
   }
 }
+/* SQUARE VIDEO FOR ARTICLE 3 */
+.weekly-news-detail.week-3 .square-video {
+  width: min(100%, 560px);
+  aspect-ratio: 1 / 1;
+  margin: 24px auto 0;
+}
+
+.weekly-news-detail.week-3 .square-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
