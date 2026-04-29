@@ -1152,4 +1152,50 @@ a {
     width: 100%;
   }
 }
+/* ===== HOME PAGE CARD IMAGE FIX ONLY ===== */
 
+.project-grid {
+  align-items: stretch;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.thumb {
+  width: 100%;
+  min-height: unset;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Learning Journey card is full width, so make image shorter */
+.five-page-grid .portfolio-card:last-child .thumb {
+  aspect-ratio: 16 / 5;
+}
+
+/* Smooth image hover */
+.portfolio-card img {
+  transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.04);
+}
+
+@media (max-width: 900px) {
+  .five-page-grid .portfolio-card:last-child .thumb {
+    aspect-ratio: 4 / 3;
+  }
+}
