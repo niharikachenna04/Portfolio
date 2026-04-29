@@ -208,16 +208,21 @@ a {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
+  align-items: stretch;
 }
 
 .five-page-grid .portfolio-card:last-child {
-  grid-column: 1 / -1;
+  grid-column: auto;
 }
 
 .portfolio-card {
   min-height: 330px;
   border-radius: var(--radius-md);
   transition: 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
 }
 
 .portfolio-card:hover {
@@ -226,13 +231,24 @@ a {
 }
 
 .thumb {
-  min-height: 220px;
+  width: 100%;
+  min-height: unset;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
   background:
     linear-gradient(135deg, rgba(80, 74, 79, 0.18), rgba(255, 255, 255, 0.2)),
     linear-gradient(to right, rgba(255, 255, 255, 0.22) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.22) 1px, transparent 1px),
     #d5d0d3;
   background-size: auto, 28px 28px, 28px 28px, auto;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .thumb-two {
@@ -253,6 +269,8 @@ a {
 
 .card-inner {
   padding: 18px;
+  margin-top: auto;
+  background: var(--card);
 }
 
 .card-title {
@@ -272,6 +290,14 @@ a {
   color: var(--muted);
   font-size: 0.82rem;
   font-weight: 900;
+}
+
+.portfolio-card img {
+  transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.04);
 }
 
 .stats-strip {
@@ -370,6 +396,7 @@ a {
     width: 100%;
   }
 }
+
 /* About page title fix */
 .hero-title.about-title {
   font-size: clamp(2.8rem, 6vw, 4.8rem) !important;
@@ -377,12 +404,7 @@ a {
   letter-spacing: -0.05em !important;
   white-space: nowrap !important;
 }
-.hero-title.about-title {
-  font-size: clamp(2.8rem, 6vw, 4.8rem) !important;
-  line-height: 1 !important;
-  letter-spacing: -0.05em !important;
-  white-space: nowrap !important;
-}
+
 /* ===== LEARNING JOURNEY PAGE FULL DESIGN ===== */
 
 .simple-header {
@@ -669,6 +691,7 @@ a {
     align-items: flex-start;
   }
 }
+
 /* SQUARE VIDEO FOR ARTICLE 3 */
 .weekly-news-detail.week-3 .square-video {
   width: min(100%, 560px);
@@ -733,6 +756,7 @@ a {
     min-height: auto;
   }
 }
+
 /* ===== MINI AI AGENT PROJECT DETAIL PAGE ===== */
 
 .project-detail-page .project-detail-hero {
@@ -900,6 +924,7 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
 /* ===== PROJECT DETAIL LINK PANEL ===== */
 .project-link-panel {
   padding: 38px 42px;
@@ -1150,52 +1175,5 @@ a {
 
   .custom-gpt-review-page .project-link-actions a {
     width: 100%;
-  }
-}
-/* ===== HOME PAGE CARD IMAGE FIX ONLY ===== */
-
-.project-grid {
-  align-items: stretch;
-}
-
-.portfolio-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow: hidden;
-}
-
-.thumb {
-  width: 100%;
-  min-height: unset;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  border-radius: 16px 16px 0 0;
-}
-
-.thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Learning Journey card is full width, so make image shorter */
-.five-page-grid .portfolio-card:last-child .thumb {
-  aspect-ratio: 16 / 5;
-}
-
-/* Smooth image hover */
-.portfolio-card img {
-  transition: transform 0.4s ease;
-}
-
-.portfolio-card:hover img {
-  transform: scale(1.04);
-}
-
-@media (max-width: 900px) {
-  .five-page-grid .portfolio-card:last-child .thumb {
-    aspect-ratio: 4 / 3;
   }
 }
