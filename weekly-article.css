@@ -317,3 +317,63 @@
 .footer-button:hover {
   background: #000;
 }
+
+/* ===== AI NEWS 2 INFOGRAPHIC EXPAND FIX ===== */
+
+.weekly-news-detail.week-2 .expand-media {
+  margin-top: 24px;
+}
+
+.weekly-news-detail.week-2 .expand-media summary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background: var(--dark-grey);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 18px 36px rgba(94, 86, 93, 0.18);
+  list-style: none;
+}
+
+.weekly-news-detail.week-2 .expand-media summary::-webkit-details-marker {
+  display: none;
+}
+
+.weekly-news-detail.week-2 .expand-media summary:hover {
+  background: #4f484f;
+}
+
+.weekly-news-detail.week-2 .week-2-infographic {
+  width: 100%;
+  max-width: 520px;
+  max-height: 300px;
+  margin: 24px auto 0;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  box-shadow: var(--shadow);
+}
+
+.weekly-news-detail.week-2 .week-2-infographic img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.weekly-news-detail.week-2 .expand-media[open] .week-2-infographic {
+  max-width: 100%;
+  max-height: none;
+}
+
+@media (max-width: 900px) {
+  .weekly-news-detail.week-2 .week-2-infographic {
+    max-width: 100%;
+    max-height: 280px;
+  }
+}
