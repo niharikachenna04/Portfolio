@@ -239,3 +239,81 @@
     max-height: none;
   }
 }
+
+/* ===============================
+   VIDEO FIX (VERY IMPORTANT)
+================================ */
+.video-block {
+  margin-top: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.video-block video {
+  width: 100%;
+  display: block;
+}
+
+
+/* ===============================
+   LINK STYLE (View Source)
+================================ */
+.news-detail-hero a {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+  transition: 0.3s ease;
+}
+
+.news-detail-hero a:hover {
+  opacity: 0.6;
+}
+
+
+/* ===============================
+   CONTENT SPACING IMPROVEMENT
+================================ */
+.section-text {
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+
+/* ===============================
+   CARD IMPROVEMENT (Key Ideas)
+================================ */
+.metrics-card {
+  padding: 18px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.metrics-card:hover {
+  transform: translateY(-4px);
+}
+
+
+/* ===============================
+   BUTTON STYLE (NEXT PAGE)
+================================ */
+.footer-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #4a4444;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.footer-button:hover {
+  background: #000;
+}
