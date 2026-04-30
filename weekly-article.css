@@ -197,10 +197,11 @@
 
 .weekly-news-detail.week-2 .week-2-infographic {
   width: 100%;
-  max-height: 560px;
-  margin-top: 24px;
+  max-width: 760px;
+  max-height: 430px;
+  margin: 24px auto 0;
   border-radius: 24px;
-  overflow: auto;
+  overflow: hidden;
   border: 1px solid var(--line);
   background: #ffffff;
   box-shadow: var(--shadow);
@@ -208,9 +209,13 @@
 
 .weekly-news-detail.week-2 .week-2-infographic img {
   width: 100%;
-  min-width: 900px;
   height: auto;
   display: block;
+}
+
+.weekly-news-detail.week-2 .expand-media[open] .week-2-infographic {
+  max-width: 100%;
+  max-height: none;
 }
 
 @media (max-width: 900px) {
@@ -219,11 +224,12 @@
   }
 
   .weekly-news-detail.week-2 .week-2-infographic {
+    max-width: 100%;
+    max-height: 360px;
     border-radius: 18px;
   }
 
-  .weekly-news-detail.week-2 .week-2-infographic img {
-    min-width: 760px;
+  .weekly-news-detail.week-2 .expand-media[open] .week-2-infographic {
+    max-height: none;
   }
 }
-
